@@ -1,0 +1,10 @@
+{ "cluster": "web2048", "serviceName": "web2048", "taskDefinition": "web2048", "loadBalancers": [ { "targetGroupArn":
+"arn:aws:elasticloadbalancing:us-east-2:436414806732:targetgroup/ECS-Target-Group/bc9bd92a24afe513", "containerName": "web2048", "containerPort":
+80
+}
+], "desiredCount": 2, "launchType": "FARGATE", "platformVersion": "LATEST", "networkConfiguration": { "awsvpcConfiguration": { "subnets": [
+    "subnet-089097776fca48805", "subnet-0e5498024fd180b89"
+], "securityGroups": [ "sg-00c6d201886762aac" ], "assignPublicIp": "ENABLED"
+}
+}
+}

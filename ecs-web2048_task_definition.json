@@ -1,0 +1,9 @@
+{ "family": "web2048", "networkMode": "awsvpc", "taskRoleArn": "arn:aws:iam::436414806732:role/LabStack-642f2f52-1e99-407e-87-ECSTaskExecutionRole-iuIckXVPm3K0",
+    "executionRoleArn": "arn:aws:iam::436414806732:role/LabStack-642f2f52-1e99-407e-87-ECSTaskExecutionRole-iuIckXVPm3K0", "containerDefinitions": [
+        { "name": "web2048", "image": "436414806732.dkr.ecr.us-east-2.amazonaws.com/web2048", "portMappings": [ { "containerPort": 80, "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ], "essential": true
+        }
+    ], "requiresCompatibilities": [ "FARGATE" ], "cpu": "256", "memory": "512"
+}
